@@ -1,0 +1,188 @@
+// ============================================================
+// Water Treatment Systems (Equipment) — Data
+// ============================================================
+
+export const equipmentCategories = [
+  // ─── a. Filtration Systems ───
+  {
+    id: 'filtration',
+    title: 'Filtration Systems (Sand, Carbon, Iron Manganese)',
+    shortTitle: 'Filtration Systems',
+    description: 'Sand Filter (ASF), Carbon Filter (ACF), dan Iron Manganese Filter (AMF). Model 10 s.d. 36 tersedia valve backwash dengan Single Multiport Valve, model 42 ke atas menggunakan Rangkaian Valve. Tersedia sistem backwash Manual dan Automatic.',
+    image: '/images/products/equip-filtration.jpg',
+    specs: ['1.0 – 65.0 m³/hour', 'FRP & MS+FRP', 'Manual / Automatic'],
+    columns: ['Model', 'Dimension (mm)', 'Capacity (m³/h)', 'M.O.C', 'Piping (inch)'],
+    keys: ['model', 'dimension', 'capacity', 'moc', 'piping'],
+    models: [
+      { model: 'ASF/ACF/AMF - 10', dimension: 'Ø 250 × 1320', capacity: '1.0 – 1.25', moc: 'FRP', piping: '¾' },
+      { model: 'ASF/ACF/AMF - 12', dimension: 'Ø 300 × 1320', capacity: '1.4 – 1.8', moc: 'FRP', piping: '1' },
+      { model: 'ASF/ACF/AMF - 13', dimension: 'Ø 330 × 1320', capacity: '1.8 – 2.0', moc: 'FRP', piping: '1' },
+      { model: 'ASF/ACF/AMF - 14', dimension: 'Ø 350 × 1500', capacity: '2.0 – 2.4', moc: 'FRP', piping: '1' },
+      { model: 'ASF/ACF/AMF - 16', dimension: 'Ø 400 × 1500', capacity: '2.5 – 3.1', moc: 'FRP', piping: '1' },
+      { model: 'ASF/ACF/AMF - 18', dimension: 'Ø 450 × 1500', capacity: '3.2 – 4.0', moc: 'FRP', piping: '1¼' },
+      { model: 'ASF/ACF/AMF - 20F', dimension: 'Ø 500 × 1500', capacity: '4.0 – 5.0', moc: 'FRP', piping: '1¼' },
+      { model: 'ASF/ACF/AMF - 20', dimension: 'Ø 500 × 1500', capacity: '4.0 – 5.0', moc: 'MS + FRP', piping: '1¼' },
+      { model: 'ASF/ACF/AMF - 24', dimension: 'Ø 610 × 1500', capacity: '5.8 – 7.6', moc: 'MS + FRP', piping: '1½' },
+      { model: 'ASF/ACF/AMF - 28', dimension: 'Ø 710 × 1500', capacity: '8.0 – 10', moc: 'MS + FRP', piping: '1½' },
+      { model: 'ASF/ACF/AMF - 30', dimension: 'Ø 760 × 1500', capacity: '10 – 12', moc: 'MS + FRP', piping: '1½' },
+      { model: 'ASF/ACF/AMF - 36', dimension: 'Ø 910 × 1500', capacity: '13 – 17', moc: 'MS + FRP', piping: '2' },
+      { model: 'ASF/ACF/AMF - 42', dimension: 'Ø 1060 × 1500', capacity: '18 – 22', moc: 'MS + FRP', piping: '2' },
+      { model: 'ASF/ACF/AMF - 48', dimension: 'Ø 1200 × 1500', capacity: '22 – 30', moc: 'MS + FRP', piping: '2½' },
+      { model: 'ASF/ACF/AMF - 54', dimension: 'Ø 1370 × 1800', capacity: '30 – 36', moc: 'MS + FRP', piping: '2½' },
+      { model: 'ASF/ACF/AMF - 60', dimension: 'Ø 1500 × 1800', capacity: '36 – 44', moc: 'MS + FRP', piping: '3' },
+      { model: 'ASF/ACF/AMF - 66', dimension: 'Ø 1680 × 1800', capacity: '45 – 55', moc: 'MS + FRP', piping: '3' },
+      { model: 'ASF/ACF/AMF - 72', dimension: 'Ø 1830 × 1800', capacity: '56 – 65', moc: 'MS + FRP', piping: '4' },
+    ],
+  },
+
+  // ─── b. Water Softeners ───
+  {
+    id: 'softener',
+    title: 'Water Softener',
+    shortTitle: 'Water Softeners',
+    description: 'Sistem pelunakan air menggunakan resin penukar ion. Model AWS menggunakan tangki FRP atau Stainless Steel. Model AWM dan AWL tersedia dengan tangki FRP, Stainless Steel 304/316, atau Mild Steel dengan FRP/rubber lining. Tersedia regenerasi Manual dan Automatic.',
+    image: '/images/products/equip-softener.jpg',
+    specs: ['1.0 – 28.0 m³/hour', 'FRP / SS / MS', 'Manual / Automatic'],
+    columns: ['Model', 'Capacity (m³/h)', 'Exchange Cap. (grains)', 'Salt (kg/regen)', 'Piping (inch)'],
+    keys: ['model', 'capacity', 'exchange', 'salt', 'piping'],
+    models: [
+      { model: 'AWS - 16', capacity: '1.0', exchange: '16,000', salt: '3.5', piping: '¾' },
+      { model: 'AWS - 32', capacity: '2.0', exchange: '32,000', salt: '7', piping: '1' },
+      { model: 'AWS - 40', capacity: '2.4', exchange: '40,000', salt: '9', piping: '1' },
+      { model: 'AWS - 48', capacity: '2.7', exchange: '48,000', salt: '10.5', piping: '1' },
+      { model: 'AWS - 64', capacity: '3.0', exchange: '64,000', salt: '14', piping: '1' },
+      { model: 'AWS - 80', capacity: '3.3', exchange: '80,000', salt: '17.5', piping: '1' },
+      { model: 'AWS - 90', capacity: '3.5', exchange: '90,000', salt: '21', piping: '1' },
+      { model: 'AWM - 190', capacity: '8.0', exchange: '190,000', salt: '42', piping: '1½' },
+      { model: 'AWM - 225', capacity: '9.5', exchange: '225,000', salt: '50', piping: '1½' },
+      { model: 'AWM - 250', capacity: '11.5', exchange: '250,000', salt: '55', piping: '1½' },
+      { model: 'AWM - 320', capacity: '13.5', exchange: '320,000', salt: '70', piping: '1½' },
+      { model: 'AWM - 480', capacity: '15.0', exchange: '480,000', salt: '105', piping: '1½' },
+      { model: 'AWL - 640', capacity: '17.0', exchange: '640,000', salt: '140', piping: '2' },
+      { model: 'AWL - 800', capacity: '19.0', exchange: '800,000', salt: '175', piping: '2' },
+      { model: 'AWL - 960', capacity: '20.0', exchange: '960,000', salt: '210', piping: '2½' },
+      { model: 'AWL - 1120', capacity: '22.0', exchange: '1,120,000', salt: '245', piping: '2½' },
+      { model: 'AWL - 1300', capacity: '24.0', exchange: '1,300,000', salt: '280', piping: '2½' },
+      { model: 'AWL - 1500', capacity: '28.0', exchange: '1,500,000', salt: '330', piping: '3' },
+    ],
+  },
+
+  // ─── c. Demineralizer / Deionizer Systems ───
+  {
+    id: 'demineralizer',
+    title: 'Demineralizer / Deionizer Systems',
+    shortTitle: 'Demineralizer',
+    description: 'Twin-Bed Demineralizer (ADS/ADM/ADL/ADD) dan Mixed Bed Deionizer (AMB) untuk menghasilkan air demin/deionized berkualitas tinggi. Model ADS/ADM menggunakan tangki FRP atau Stainless Steel. Model ADL/ADD tersedia dengan tangki FRP, SS 304/316, atau Mild Steel. Tersedia regenerasi Manual dan Automatic.',
+    image: '/images/products/equip-demineralizer.jpg',
+    specs: ['0.5 – 40.0 m³/hour', 'FRP / SS / MS', 'Twin-Bed & Mixed Bed'],
+    columns: ['Model', 'Capacity (m³/h)', 'Exchange Cap. (grains)', 'Piping (inch)', 'Space L×D×H (cm)'],
+    keys: ['model', 'capacity', 'exchange', 'piping', 'space'],
+    models: [
+      { model: 'ADS - 10', capacity: '0.5 – 1.0', exchange: '10,000', piping: '¾', space: '60 × 55 × 150' },
+      { model: 'ADS - 20', capacity: '1.1 – 1.3', exchange: '20,000', piping: '¾', space: '60 × 60 × 150' },
+      { model: 'ADS - 40', capacity: '1.4 – 1.6', exchange: '40,000', piping: '¾', space: '70 × 65 × 150' },
+      { model: 'ADS - 70', capacity: '1.7 – 2.0', exchange: '70,000', piping: '¾', space: '80 × 70 × 150' },
+      { model: 'ADM - 100', capacity: '2.5 – 3.3', exchange: '100,000', piping: '1', space: '140 × 65 × 150' },
+      { model: 'ADM - 120', capacity: '3.4 – 3.8', exchange: '120,000', piping: '1¼', space: '160 × 70 × 150' },
+      { model: 'ADM - 140', capacity: '3.9 – 4.2', exchange: '140,000', piping: '1¼', space: '160 × 70 × 150' },
+      { model: 'ADM - 160', capacity: '4.3 – 5.0', exchange: '160,000', piping: '1¼', space: '160 × 70 × 150' },
+      { model: 'ADL - 200', capacity: '6.0 – 7.0', exchange: '200,000', piping: '2', space: '350 × 140 × 200' },
+      { model: 'ADL - 300', capacity: '7.5 – 10', exchange: '300,000', piping: '2', space: '350 × 154 × 200' },
+      { model: 'ADL - 400', capacity: '11 – 14', exchange: '400,000', piping: '2', space: '350 × 164 × 200' },
+      { model: 'ADL - 500', capacity: '15 – 17', exchange: '500,000', piping: '2', space: '350 × 164 × 200' },
+      { model: 'ADD - 600', capacity: '18 – 20', exchange: '600,000', piping: '2½', space: '700 × 154 × 200' },
+      { model: 'ADD - 800', capacity: '22 – 28', exchange: '800,000', piping: '2½', space: '760 × 164 × 200' },
+      { model: 'ADD - 1000', capacity: '30 – 34', exchange: '1,000,000', piping: '3', space: '760 × 164 × 200' },
+      { model: 'ADD - 1200', capacity: '35 – 40', exchange: '1,200,000', piping: '3', space: '750 × 164 × 200' },
+    ],
+    // Mixed Bed sub-table
+    mixedBedModels: [
+      { model: 'AMB - 1472', capacity: '2.0', exchange: '34,000', piping: '1' },
+      { model: 'AMB - 2084', capacity: '3.5', exchange: '70,000', piping: '1' },
+      { model: 'AMB - 2484', capacity: '5.5', exchange: '105,000', piping: '1½' },
+      { model: 'AMB - 3084', capacity: '10.0', exchange: '165,000', piping: '1½' },
+      { model: 'AMB - 3684', capacity: '20.0', exchange: '230,000', piping: '2' },
+      { model: 'AMB - 4884', capacity: '30.0', exchange: '400,000', piping: '2½' },
+      { model: 'AMB - 6084', capacity: '40.0', exchange: '650,000', piping: '3' },
+    ],
+    // Portable Mixed Bed sub-table
+    portableModels: [
+      { model: 'PMB - 844', size: 'Small', dimension: '200 × 1100', piping: '¾' },
+      { model: 'PMB - 1054', size: 'Medium', dimension: '250 × 1370', piping: '¾' },
+      { model: 'PMB - 1254', size: 'Large', dimension: '300 × 1370', piping: '1' },
+      { model: 'PMB - 1465', size: 'King', dimension: '350 × 1500', piping: '1' },
+    ],
+  },
+
+  // ─── d. Reverse Osmosis (R/O) Systems ───
+  {
+    id: 'ro-systems',
+    title: 'Reverse Osmosis (R/O) Systems',
+    shortTitle: 'R/O Systems',
+    description: 'Sistem Reverse Osmosis untuk pengolahan air tawar/payau (Tap/Brackish Water) dan air laut (Sea Water). Tersedia dalam berbagai kapasitas dari skala kecil hingga industri besar. Construction SS-304 dengan aksesori lengkap termasuk flow meter, pressure gauge, conductivity monitor, solenoid valve, pre-filter, dan cleaning station.',
+    image: '/images/products/equip-ro-system.jpg',
+    specs: ['0.95 m³/day – 15 m³/hour', 'SS-304 Frame', 'Brackish & Sea Water'],
+    columns: ['Model', 'Capacity', 'Power', 'Operating Pressure'],
+    keys: ['model', 'capacity', 'power', 'pressure'],
+    // Small-Medium Brackish
+    models: [
+      { model: 'RS-950', capacity: '0.95 m³/day', power: '220 V', pressure: '110 – 190 Psi' },
+      { model: 'RS-2000', capacity: '1.50 m³/day', power: '220 V', pressure: '110 – 190 Psi' },
+      { model: 'RS-3000', capacity: '2.50 m³/day', power: '220 V', pressure: '110 – 190 Psi' },
+      { model: 'RS-4500', capacity: '4.00 m³/day', power: '220 V', pressure: '110 – 190 Psi' },
+      { model: 'RS-6000', capacity: '5.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+      { model: 'RS-9000', capacity: '8.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+      { model: 'RM-12T', capacity: '10.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+      { model: 'RM-18T', capacity: '15.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+      { model: 'RM-24T', capacity: '20.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+      { model: 'RM-36T', capacity: '30.00 m³/day', power: '380 V', pressure: '110 – 190 Psi' },
+    ],
+    // Large Brackish
+    largeModels: [
+      { model: 'RL 10', capacity: '2.25 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+      { model: 'RL 15', capacity: '3.50 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+      { model: 'RL 20', capacity: '4.50 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+      { model: 'RL 30', capacity: '7.00 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+      { model: 'RL 55', capacity: '12.50 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+      { model: 'RL 65', capacity: '15.00 m³/hour', power: '380 V, 3 Ph', pressure: '140 – 200 Psi' },
+    ],
+    // Sea Water R/O
+    seaWaterModels: [
+      { model: 'SWR-900', capacity: '0.80 m³/day', power: '1½ HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-2T', capacity: '2.00 m³/day', power: '1½ HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-5T', capacity: '5.00 m³/day', power: '3 HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-10T', capacity: '10.00 m³/day', power: '5 HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-4K', capacity: '24.00 m³/day', power: '10 HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-8K', capacity: '48.00 m³/day', power: '25 HP', pressure: '400 – 800 Psi' },
+      { model: 'SWR-20K', capacity: '108.00 m³/day', power: '40 HP', pressure: '400 – 800 Psi' },
+    ],
+  },
+
+  // ─── e. Specialty Equipment ───
+  {
+    id: 'specialty',
+    title: 'Specialty Equipment (EDI & UV Sterilizer)',
+    shortTitle: 'EDI & UV',
+    description: 'Electrodeionization (EDI/CDI) untuk produksi air ultra-murni secara kontinu, dan UV Sterilizer untuk disinfeksi air tanpa bahan kimia. EDI dilengkapi SS frame, high pressure pump, flow meter, pressure gauge, conductivity monitor, dan resistivity meter.',
+    image: '/images/products/equip-edi-uv.jpg',
+    specs: ['100 – 1000 L/hour (EDI)', '10 – 200 GPM (UV)', 'Ultra-pure Water'],
+    columns: ['Model', 'Capacity (L/hour)', 'Power Supply', 'Control Box (mm)', 'Inlet Volume (L/h)'],
+    keys: ['model', 'capacity', 'power', 'controlBox', 'inlet'],
+    models: [
+      { model: 'EDI - 100', capacity: '100', power: 'DC90V/1.6A', controlBox: '300 × 400 × 200', inlet: '>130' },
+      { model: 'EDI - 250', capacity: '250', power: 'DC90V/1.6A', controlBox: '300 × 400 × 200', inlet: '>300' },
+      { model: 'EDI - 500', capacity: '500', power: 'DC150V/3A', controlBox: '500 × 400 × 200', inlet: '>600' },
+      { model: 'EDI - 1000', capacity: '1000', power: 'DC150V/3A', controlBox: '500 × 400 × 200', inlet: '>1100' },
+    ],
+    // UV Sterilizer sub-table
+    uvModels: [
+      { model: 'AUV-35', capacity: '10.0 GPM', power: '35W', dimension: 'Ø 63.5 × 950' },
+      { model: 'AUV-55', capacity: '12.0 GPM', power: '55W', dimension: 'Ø 63.5 × 950' },
+      { model: 'AUV-110', capacity: '24.0 GPM', power: '110W', dimension: 'Ø 110 × 950' },
+      { model: 'AUV-165', capacity: '36.0 GPM', power: '165W', dimension: 'Ø 135 × 950' },
+      { model: 'AUV-220', capacity: '48.0 GPM', power: '220W', dimension: 'Ø 135 × 950' },
+      { model: 'AUV-275', capacity: '108.0 GPM', power: '275W', dimension: 'Ø 135 × 950' },
+      { model: 'AUV-550', capacity: '200.0 GPM', power: '550W', dimension: 'Ø 220 × 950' },
+    ],
+  },
+]
